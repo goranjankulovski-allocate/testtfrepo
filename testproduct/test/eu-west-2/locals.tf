@@ -18,4 +18,3 @@ locals {
     "debtor-id"            = "ALL001"
   }
 }
-test
