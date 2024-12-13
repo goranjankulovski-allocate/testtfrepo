@@ -3,7 +3,7 @@ locals {
   region = "eu-west-1"
   env = "preprod"
   product = "testproduct"
-  tags {
+  tags = {
     "product"              = "testproduct"
     "product-family"       = "internal-shared-services"
     "product-group"        = "shared-hosting"
