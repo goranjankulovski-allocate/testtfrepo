@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "aws" {
-  allowed_account_ids = var.allowed_aws_account_ids
+  allowed_account_ids = "uk-role"
   assume_role {
-    role_arn = var.assume_role_arn
+    role_arn = "arn:::uk-role"
   }
   region = "eu-west-2"
   default_tags {
