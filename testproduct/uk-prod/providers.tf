@@ -32,7 +32,7 @@ provider "aws" {
   assume_role {
     role_arn = "arn:aws:iam::222634388534:role/aft-terraform-runner"
   }
-  region = "eu-west-2"
+  region = local.region
   default_tags {
     tags = local.tags
   }
