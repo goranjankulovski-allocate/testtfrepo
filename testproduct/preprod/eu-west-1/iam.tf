@@ -1,15 +1,13 @@
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "*",
-      "Resource": "*"
-      "Condition": {
-        "StringEquals": {
-          "aws:ResourceTag/product": "testproduct"
-        }
-      }
+data "aws_iam_policy_document" "readonly-deny-ssm" {
+  statement {
+    sid = "AllowAlltestproduct"
+    effect = "Allow"
+    resources = ["*"]
+    actions = ["*"]
+    condition {
+      test     = "ForAnyValue:StringEquals"
+      variable = "aws:ResourceTag/product"
+      values   = ["testproduct"]
     }
-  ]
+  }
 }
