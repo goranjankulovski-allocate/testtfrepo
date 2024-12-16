@@ -1,4 +1,4 @@
-data "aws_iam_policy_document" "readonly-deny-ssm" {
+data "aws_iam_policy_document" "iam_policy" {
   statement {
     sid = "AllowAlltestproduct"
     effect = "Allow"
