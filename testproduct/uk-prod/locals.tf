@@ -1,5 +1,5 @@
 locals {
-  region = "uk"
+  region = "eu-west-2"
   env = "prod"
   product = "testproduct"
   tags = {
