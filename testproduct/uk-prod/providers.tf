@@ -28,11 +28,11 @@ terraform {
 }
 
 provider "aws" {
-  allowed_account_ids = "222634388534"
+  allowed_account_ids = ["222634388534"]
   assume_role {
-    role_arn = "arn:::222634388534"
+    role_arn = "arn:aws:iam::222634388534:role/aft-terraform-runner"
   }
-  region = "uk"
+  region = "eu-west-2"
   default_tags {
     tags = local.tags
   }
