@@ -1,5 +1,4 @@
 locals {
-  name = "testtfgit"
   region = "eu-west-2"
   env = "prod"
   product = "testproduct"
