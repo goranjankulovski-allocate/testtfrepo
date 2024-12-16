@@ -3,7 +3,7 @@ terraform {
         hostname     = "app.terraform.io"
         organization = "allocatesoftware"
         workspaces {
-            name = "222634388534-productname-prod"
+            name = "platform-uk-production-productname-prod"
         }
     }
 }
