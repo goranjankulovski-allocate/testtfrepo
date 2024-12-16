@@ -1,6 +1,6 @@
 data "aws_iam_policy_document" "iam_policy" {
   statement {
-    sid = "AllowAlltestproduct"
+    sid = "AllowAll-testproduct"
     effect = "Allow"
     resources = ["*"]
     actions = ["*"]
