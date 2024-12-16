@@ -28,7 +28,7 @@ terraform {
 }
 
 provider "aws" {
-  allowed_account_ids = [try("222634388534","222634388534")]
+  allowed_account_ids = ["222634388534"]
   assume_role {
     role_arn = "arn:aws:iam::222634388534:role/aft-terraform-runner"
   }
